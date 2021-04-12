@@ -1,25 +1,47 @@
 let num;
 let score;
-const question_1 = {
-  question: '',
-  answer: '',
-  currectAnswer: ''
-}
+const questions = [
 
-const question_2 = {
-  question: '',
-  answer: '',
-  currectAnswer: ''
-}
+	    {
+	        question: "Кто основатель социальной сети Facebook?",
+	        answers: {
+	            a: "Билл Гейтс",
+	            b: "Стив Джобс",
+	            c: "Марк Цукерберг"
+	        },
+	        correctAnswer: "c"
+	    },
+	    {
+	        question: "В каком году появился превый сайт?",
+	        answers: {
+	            a: "2003",
+	            b: "1991",
+	            c: "1982"
+	        },
+	        correctAnswer: "b"
+	    },
+		{	question: "Cтолица России?",
+			answers: {
+					a: "Санкт-Петербург",
+					b: "Казань",
+					c: "Москва"
+			},
+			correctAnswer: "c"
+	},
+	{
+			question: "Кто основал Санкт-Петербург?",
+			answers: {
+					a: "Петр I",
+					b: "Юрий Долгорукий",
+					c: "Николай II"
+			},
+			correctAnswer: "a"
+		}
+	];
 
-const question_3 = {
-  question: '',
-  answer: '',
-  currectAnswer: ''
-}
-
-const question_4 = {
-  question: '',
-  answer: '',
-  currectAnswer: ''
-}
+	
+questions.forEach((item) => {
+  if(item.correctAnswer === 'c') {
+    console.log(item);
+  }
+});
